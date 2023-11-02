@@ -1,1 +1,12 @@
-<p>sensor works!</p>
+<header>
+    <div class="back-button">
+      <button (click)="backToMain()">Zurück</button>
+    </div>
+</header>
+<div>
+    <h1>Sensor Array</h1>
+    <ul>
+      <li *ngFor="let item of sensorArray">{{ item }}</li>
+    </ul>
+  </div>
+  

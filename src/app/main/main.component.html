@@ -1,1 +1,19 @@
-<p>main works!</p>
+<!-- app.component.html -->
+<header>
+    <div class="logout-button">
+      <button (click)="logOut()">Logout</button>
+    </div>
+</header>
+<div>
+  <h1>Sensor Arrays</h1>
+  <div class="sensor-container">
+    <ng-container *ngFor="let sensor of [sensor1, sensor2, sensor3]; let i = index">
+      <div class="sensor-card" (click)="navigateToSensorPage(i)">
+        <h2>Sensor {{ i + 1 }}</h2>
+        <ul>
+          <li *ngFor="let item of sensor">{{ item }}</li>
+        </ul>
+      </div>
+    </ng-container>
+  </div>
+</div>

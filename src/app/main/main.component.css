@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-around; /* Ändern Sie dies je nach Ihrem Layoutwunsch */
   }
-  
+
   .array {
     margin: 10px;
     padding: 10px;
@@ -19,12 +19,12 @@ header {
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .logout-button {
     /* Die Änderungen, um den Button oben rechts anzuzeigen */
     margin-left: auto; /* Verschiebt den Button ganz nach rechts */
   }
-  
+
   button {
     background-color: #f00;
     color: #fff;
@@ -32,17 +32,38 @@ header {
     padding: 10px 20px;
     cursor: pointer;
   }
-  
+
   button:hover {
     background-color: #d00;
   }
   .sensor-container {
     display: flex;
   }
-  
+
   .sensor-card {
     margin: 10px;
     padding: 10px;
+    background-color: #f7f7f7;
     border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
   }
-  
+
+  .sensor-card:hover {
+    box-shadow: 1px 1px 5px;
+    position: relative;
+    top: -2px;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 10px;
+    width: calc(100% - 16px);
+    box-sizing: border-box;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }

@@ -7,8 +7,9 @@
     <button (click)="logOut()">Logout</button>
   </div>
 </header>
+<div class="centered">
 <div>
-    <h1>Sensor Array</h1>
+    <h1>Sensor Übersicht</h1>
     <b>Anzeige von alt nach neu</b>
     <ul>
       <li *ngFor="let item of sensorArray" [ngClass]="{'red-text': item > tempMax}">{{ item }}</li>
@@ -30,6 +31,7 @@
 </div>
 <div class="refresh-button">
   <button (click)="refresh()">Aktualisieren</button>
+</div>
 </div>
 <footer>
   <div class="logout-button">

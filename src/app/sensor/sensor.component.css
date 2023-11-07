@@ -48,6 +48,10 @@ footer {
   margin-top: 15px;
 }
 
+.change-button button {
+  width: 100%;
+}
+
 .change-button {
   margin-top: 5px;
 }
@@ -55,4 +59,22 @@ footer {
 input
 {
   width: 55px;
+}
+
+.refresh-button {
+  margin-top: 5px;
+}
+
+.refresh-button button {
+  width: 100%;
+}
+.centered {
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, 0);
 }

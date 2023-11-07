@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { SensorComponent } from './sensor/sensor.component';
 import { MainComponent } from './main/main.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HelpPageComponent } from './help-page/help-page.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     AppComponent,
     LoginComponent,
     SensorComponent,
-    MainComponent
+    MainComponent,
+    HelpPageComponent
   ],
   imports: [
     BrowserModule,

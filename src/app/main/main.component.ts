@@ -35,4 +35,7 @@ export class MainComponent implements OnInit {
     this.router.navigate([`sensor/${ID+1}`]);
     console.log(ID);
   }
+  help(){
+    this.router.navigate(['help']);
+  }
 }

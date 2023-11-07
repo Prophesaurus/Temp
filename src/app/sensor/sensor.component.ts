@@ -15,6 +15,7 @@ export class SensorComponent implements OnInit {
   Adresse : String = "";
   Hersteller : String = "";
   avg : number = 0;
+  highTemp : number = 0;
   constructor(
     private activatedRoute: ActivatedRoute,
     private http: HttpClient,
@@ -71,6 +72,7 @@ export class SensorComponent implements OnInit {
       this.avg +=randomNumber;
     }
     this.avg = Math.round(this.avg / 10 * 100)/100;
+    this.highTemp = Math.max(...this.sensorArray.map(o => o), 0);
   }
 
   backToMain(){
@@ -85,5 +87,8 @@ export class SensorComponent implements OnInit {
 
   logOut(){
     this.router.navigate(['login']);
+  }
+  help(){
+    this.router.navigate(['help']);
   }
 }

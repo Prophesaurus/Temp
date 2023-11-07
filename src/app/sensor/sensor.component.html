@@ -1,5 +1,5 @@
 <header>
-  
+
   <div class="back-button">
     <button (click)="backToMain()">Zurück</button>
   </div>
@@ -20,12 +20,11 @@
   Adresse: {{Adresse}} <br>
   Hersteller: {{Hersteller}}<br>
   Höchste gemessene Temperatur: {{highTemp}}<br>
-  <div>
+</div>
+  <div class="maxTemp">
     <label for="textInput">Maximaltemperatur: </label>
     <input type="number" id="textInput" [(ngModel)]="tempMax">
   </div>
-  
-</div>
 <div class="change-button">
   <button (click)="changeMaxTemp()">Maximaltemperatur ändern</button>
 </div>

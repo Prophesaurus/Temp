@@ -9,7 +9,10 @@
         <label for="password" class="login-label">Passwort:</label>
         <input type="password" id="password" [(ngModel)]="password" name="password" required class="login-input">
       </div>
-      <button (click)="login()">Anmelden</button>
+      <button (click)="login()" [disabled]="isDisabled">Anmelden</button>
+      <div *ngIf="loginError" class="error-message">
+        Fehlerhafte Anmeldeinformationen. Bitte versuche es erneut.
+      </div>
     </form>
   </div>
 

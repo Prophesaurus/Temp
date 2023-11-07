@@ -1,10 +1,22 @@
+<header>
+    <div class="back-button">
+    <button (click)="backToMain()">Zurück</button>
+  </div>
+</header>
 <h1>Hilfe</h1>
 <div>
     <h2>Hauptseite</h2>
     <img src="assets/main.PNG" alt="Mainpage" ><br>
-    
+    <p>Auf der Hauptseite werden von allen Sensoren ihre Namen und die letzten 10 Temperaturen angezeigt.</p>
+    <p>Bei einem Klick auf eine der Sensorboxen wird auf eine Detailansicht des jeweiligen Sensors weitergeleitet.</p>
+    <p>In der oberen rechten Ecke steht ein Knopf zum Ausloggen zur Verfügung.</p>
 </div>
 <div>
     <h2>Sensorseite</h2>
     <img src="assets/sensor.PNG" alt="Sensorpage">
+    <p>Jede Sensorseite ist auf die gleiche Art und Weise aufgebaut.</p>
+    <p>Es werden die letzten 10 Temperaturen angezeigt, sortiert von alt nach neu.</p>
+    <p>Die Temperaturen werden farblich rot markiert, wenn sie über der angegeben Maximaltemperatur liegen.</p>
+    <p>Darunter stehen verschiedene Statistiken für den Sensor.</p>
+    <p>Die Maximaltemperatur kann vom Nutzer angepasst werden. Das Ändern wird in einer separaten log-Datenbank gespeichert und kann von Administratoren ausgelesen werden.</p>
 </div>

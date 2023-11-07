@@ -10,35 +10,71 @@ header {
     /* Die Änderungen, um den Button oben links anzuzeigen */
     margin-right: auto; /* Verschiebt den Button ganz nach links */
   }
-  .logout-button {
-    /* Die Änderungen, um den Button oben rechts anzuzeigen */
-    margin-left: auto; /* Verschiebt den Button ganz nach rechts */
-  }
-  button {
-    background-color: #f00;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
 
-  button:hover {
-    background-color: #d00;
-  }
+.logout-button {
+  /* Die Änderungen, um den Button oben rechts anzuzeigen */
+  margin-left: auto; /* Verschiebt den Button ganz nach rechts */
+}
+button {
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
 
-  .red-text {
-    color: red;
-  }
+button:hover {
+  background-color: #d00;
+}
 
-  footer {
-    position: absolute;
-    bottom: 10px;
-    width: calc(100% - 16px);
-    box-sizing: border-box;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.red-text {
+  color: red;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  width: calc(100% - 16px);
+  box-sizing: border-box;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.maxTemp {
+  margin-top: 15px;
+}
+
+.change-button button {
+  width: 100%;
+}
+
+.change-button {
+  margin-top: 5px;
+}
+
+input
+{
+  width: 55px;
+}
+
+.refresh-button {
+  margin-top: 5px;
+}
+
+.refresh-button button {
+  width: 100%;
+}
+.centered {
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}

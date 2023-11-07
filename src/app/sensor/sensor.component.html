@@ -1,5 +1,5 @@
 <header>
-  
+
   <div class="back-button">
     <button (click)="backToMain()">Zurück</button>
   </div>
@@ -7,8 +7,9 @@
     <button (click)="logOut()">Logout</button>
   </div>
 </header>
+<div class="centered">
 <div>
-    <h1>Sensor Array</h1>
+    <h1>Sensor Übersicht</h1>
     <b>Anzeige von alt nach neu</b>
     <ul>
       <li *ngFor="let item of sensorArray" [ngClass]="{'red-text': item > tempMax}">{{ item }}</li>
@@ -20,17 +21,17 @@
   Adresse: {{Adresse}} <br>
   Hersteller: {{Hersteller}}<br>
   Höchste gemessene Temperatur: {{highTemp}}<br>
-  <div>
+</div>
+  <div class="maxTemp">
     <label for="textInput">Maximaltemperatur: </label>
     <input type="number" id="textInput" [(ngModel)]="tempMax">
   </div>
-  
-</div>
 <div class="change-button">
   <button (click)="changeMaxTemp()">Maximaltemperatur ändern</button>
 </div>
 <div class="refresh-button">
   <button (click)="refresh()">Aktualisieren</button>
+</div>
 </div>
 <footer>
   <div class="logout-button">

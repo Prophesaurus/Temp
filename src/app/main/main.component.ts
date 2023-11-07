@@ -20,8 +20,8 @@ export class MainComponent implements OnInit {
   sensorArray: number[] = [...this.sensor1, ...this.sensor2, ...this.sensor3];
    
   array1: number[] = [1, 2, 3];
- array2: number[] = [4, 5, 6];
- combinedArray: number[] = [...this.array1, ...this.array2];
+  array2: number[] = [4, 5, 6];
+  combinedArray: number[] = [...this.array1, ...this.array2];
 //console.log(combinedArray); // Gibt [1, 2, 3, 4, 5, 6] aus
 
 
@@ -29,11 +29,11 @@ export class MainComponent implements OnInit {
   }
 
   logOut(){
+    sessionStorage.removeItem('user');
     this.router.navigate(['login']);
   }
   navigateToSensorPage(ID : number){
     this.router.navigate([`sensor/${ID+1}`]);
-    console.log(ID);
   }
   help(){
     this.router.navigate(['help']);

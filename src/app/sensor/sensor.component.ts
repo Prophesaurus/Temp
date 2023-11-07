@@ -33,6 +33,18 @@ export class SensorComponent implements OnInit {
     });
   }
 
+  refresh(){
+    this.sensorArray = [];
+    this.activatedRoute.params.subscribe((params) => {
+      if(params['id']){
+        this.loadSensor(params['id'].toString())
+
+      }
+      else
+      console.log("Fehler");
+    });
+  }
+
   loadSensor(ID:String){
     switch (ID){
       case "1":
@@ -82,10 +94,11 @@ export class SensorComponent implements OnInit {
   changeMaxTemp(){
     this.tempMax = parseInt((document.getElementById("textInput") as HTMLInputElement).value);
     console.log(this.tempMax)
-    console.log(sessionStorage.getItem('username'));
+    console.log(sessionStorage.getItem('user'));
   }
 
   logOut(){
+    sessionStorage.removeItem('user');
     this.router.navigate(['login']);
   }
   help(){

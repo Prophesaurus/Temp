@@ -5,27 +5,31 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  .back-button {
-      /* Die Änderungen, um den Button oben links anzuzeigen */
-      margin-right: auto; /* Verschiebt den Button ganz nach links */
-    }
-    .logout-button {
-      /* Die Änderungen, um den Button oben rechts anzuzeigen */
-      margin-left: auto; /* Verschiebt den Button ganz nach rechts */
-    }
-    button {
-      background-color: #f00;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-    }
-    
-    button:hover {
-      background-color: #d00;
-    }
-  
-    .red-text {
-      color: red;
-    }
+}
+.back-button {
+  /* Die Änderungen, um den Button oben links anzuzeigen */
+  margin-right: auto; /* Verschiebt den Button ganz nach links */
+}
+.logout-button {
+  /* Die Änderungen, um den Button oben rechts anzuzeigen */
+  margin-left: auto; /* Verschiebt den Button ganz nach rechts */
+}
+button {
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d00;
+}
+
+.red-text {
+  color: red;
+}
+
+img {
+  height: 550px;
+}

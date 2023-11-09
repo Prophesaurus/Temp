@@ -24,9 +24,9 @@ export class LoginComponent {
    }
 
   login() {
-    // Hier kannst du deine Login-Logik implementieren
     if (this.username === 'Test' && this.password === 'test') {
       //alert('Erfolgreich angemeldet!');
+      this.wrongLoginCounter = 0;
       this.router.navigate(['main']);
       sessionStorage.setItem("user", this.username);
     } else {
